@@ -24,6 +24,9 @@ end)
 Section:NewSlider("Speed", "Walkspeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
+Section:NewKeybind("Toggle Ui", "Hide/Show Gui", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
 if game.PlaceId == 2534724415 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Twoja Matka HUB", "Ocean")
@@ -5786,6 +5789,9 @@ end
 
 end)
 end)
+Section:NewKeybind("Toggle Ui", "Hide/Show Gui", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
 end
 if game.PlaceId == 6284583030 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
@@ -5795,6 +5801,9 @@ local Section = Tab:NewSection("Credits: Skipped#2115")
 Section:NewButton("Get Script", "A nice script", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/kB7CVpBd"))()
 end)
+Section:NewKeybind("Toggle Ui", "Hide/Show Gui", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
 end
 if game.PlaceId == 301549746 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
@@ -5803,6 +5812,9 @@ local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Credits: Skipped#2115")
 Section:NewButton("CBRO Scripts", "A nice script", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Danixik/LoaderV3/main/Main.lua", true))()
+end)
+Section:NewKeybind("Toggle Ui", "Hide/Show Gui", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
 end)
 end
 if game.PlaceId == 537413528 then
@@ -5885,5 +5897,8 @@ local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Credits: Skipped#2115")
 Section:NewButton("Zen X", "Best Script trade tower", function()
     loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+end)
+Section:NewKeybind("Toggle Ui", "Hide/Show Gui", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
 end)
 end
