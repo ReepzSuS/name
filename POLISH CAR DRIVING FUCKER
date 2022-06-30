@@ -1,0 +1,64 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("POLISH CAR DRIVING FUCKER", "Synapse")
+-- MAIN
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Wypierdol AntiExploit", "Wypierdala AntiExploit BY KRYSTEL", function()
+    -- Polish Car Driving AC bypass by KrysteŁ#5520
+local mt = getrawmetatable(game)
+    local namecall = mt.__namecall
+    setreadonly(mt,false)
+
+    mt.__namecall = function(self,...)
+        local args = {...}
+        local method = getnamecallmethod()
+
+        if tostring(self) == "TheI" or tostring(self) == "TheZ" or tostring(self) == "TheW" or tostring(self) == "TheH" or tostring(self) == "TheE" and method == "FireServer" then
+            return
+        end
+
+        if tostring(self) == "Head" or tostring(self) == "HumanoidRootPart" and method == "Destroy" then
+            return
+        end
+        return namecall(self,...)
+    end
+end)
+Section:NewButton("Admin", "Infinite Yield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewToggle("Super Human", "o chuj super man", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+local Section = Tab:NewSection("Teamy")
+Section:NewButton("Citizen", "", function()
+    local args = {
+    [1] = "Sea green"
+}
+
+game:GetService("ReplicatedStorage").TeamChangeEvent:FireServer(unpack(args))
+end)
+Section:NewButton("Trucker", "", function()
+    local args = {
+    [1] = "Bright orange"
+}
+
+game:GetService("ReplicatedStorage").TeamChangeEvent:FireServer(unpack(args))
+end)
+-- OTHER
+local Tab = Window:NewTab("Others")
+local Section = Tab:NewSection("Others")
+Section:NewButton("RemoteSpy", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/bCghX33W", true))()
+end)
+-- TOGGLES
+local Tab = Window:NewTab("Toggles")
+local Section = Tab:NewSection("Toggles")
+Section:NewKeybind("Toggle GUI", "", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
