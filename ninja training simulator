@@ -1,0 +1,54 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Ninja Training SIM FUCKER", "Midnight")
+local AutoFarm = Window:NewTab("AutoFarm")
+local Section = AutoFarm:NewSection("Teleports")
+Section:NewButton("AutoFarm", "Can't be stopped", function()
+    while wait() do
+local Event = game:GetService("ReplicatedStorage").Events.Click
+Event:FireServer()
+end
+end)
+-- Teleports
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Teleports")
+Section:NewButton("Spawn", "Teleport", function()
+    local A_1 = "Teleport"
+local A_2 = "Spawn"
+local Event = game:GetService("ReplicatedStorage").Events.Teleport
+Event:FireServer(A_1, A_2)
+end)
+
+Section:NewButton("Ocean", "Teleport", function()
+    local A_1 = "Teleport"
+local A_2 = "Ocean"
+local Event = game:GetService("ReplicatedStorage").Events.Teleport
+Event:FireServer(A_1, A_2)
+end)
+
+Section:NewButton("Volcano", "Teleport", function()
+    local A_1 = "Teleport"
+local A_2 = "Volcano"
+local Event = game:GetService("ReplicatedStorage").Events.Teleport
+Event:FireServer(A_1, A_2)
+end)
+
+Section:NewButton("Forest", "Teleport", function()
+    local A_1 = "Teleport"
+local A_2 = "Forest"
+local Event = game:GetService("ReplicatedStorage").Events.Teleport
+Event:FireServer(A_1, A_2)
+end)
+
+Section:NewButton("Candy", "Teleport", function()
+    local A_1 = "Teleport"
+local A_2 = "Candy"
+local Event = game:GetService("ReplicatedStorage").Events.Teleport
+Event:FireServer(A_1, A_2)
+end)
+
+Section:NewButton("Cyber", "Teleport", function()
+    local A_1 = "Teleport"
+local A_2 = "Cyber"
+local Event = game:GetService("ReplicatedStorage").Events.Teleport
+Event:FireServer(A_1, A_2)
+end)
