@@ -3,10 +3,20 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Ninja Training SIM FUCKER", "Midnight")
 local AutoFarm = Window:NewTab("AutoFarm")
 local Section = AutoFarm:NewSection("Teleports")
-Section:NewButton("AutoFarm", "Can't be stopped", function()
+Section:NewButton("AutoFarm (Read Desc)", "Can't be stopped", function()
     while wait() do
 local Event = game:GetService("ReplicatedStorage").Events.Click
 Event:FireServer()
+end
+end)
+-- Auto Pracitce
+local Tab = Window:NewTab("Auto Practice")
+local Section = Tab:NewSection("Auto Practice")
+Section:NewButton("Auto Practice (Read desc)", "Can't be stopped!", function()
+    while wait() do 
+local A_1 = 2
+local Event = game:GetService("ReplicatedStorage").Events.Practice
+Event:FireServer(A_1)
 end
 end)
 -- Teleports
