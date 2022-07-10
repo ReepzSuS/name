@@ -1,3 +1,4 @@
+if not syn then print("buy synapse poor monkey")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Ninja Training SIM FUCKER", "Midnight")
 local AutoFarm = Window:NewTab("AutoFarm")
@@ -46,9 +47,9 @@ local Event = game:GetService("ReplicatedStorage").Events.Teleport
 Event:FireServer(A_1, A_2)
 end)
 
-Section:NewButton("Cyber", "Teleport", function()
+Section:NewButton("Desert", "Teleport", function()
     local A_1 = "Teleport"
-local A_2 = "Cyber"
+local A_2 = "Desert"
 local Event = game:GetService("ReplicatedStorage").Events.Teleport
 Event:FireServer(A_1, A_2)
 end)
