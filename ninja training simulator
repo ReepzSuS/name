@@ -70,3 +70,6 @@ local A_2 = "Desert"
 local Event = game:GetService("ReplicatedStorage").Events.Teleport
 Event:FireServer(A_1, A_2)
 end)
+-- Credits
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("bremo")
